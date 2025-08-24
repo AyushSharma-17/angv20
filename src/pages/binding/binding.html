@@ -1,0 +1,14 @@
+<p>binding works!</p>
+
+// Example of interpolation binding
+<p>Course Name: {{courseName}}</p>
+<p>Course ID: {{courseId}}</p>
+
+//example of event binding
+<button (click)="showMessage()"> click here </button>
+// button for changing value of course Name
+<button (click)="changeName()">change button</button>
+//all the pervious value is been updated by clicking of button
+<br>
+//ngmodel example
+<input type="text" [(ngModel)]="courseName"/>

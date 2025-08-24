@@ -1,0 +1,22 @@
+<p>directive-atr works!</p>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<div>
+    <div class="p-3" [ngClass]="div1ClassName()">
+        div1 -{{div1ClassName()}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <button class="btn btn-success" (click)="setbgground('bg-success')">green</button>
+        <button class="btn btn-danger" (click)="setbgground('bg-danger')">red</button>
+
+    </div>
+</div>
+<div class="col-3">
+    <div class="p-3" [ngStyle]="{'background-color':isdiv2colorGreen==true ?'blue':'red'}">
+        DIV 2
+    </div>
+</div>
+<div class="col-3">
+<button class="btn btn-primary" (click)="togglediv2color()">Toggle div2 color</button>
+</div>
