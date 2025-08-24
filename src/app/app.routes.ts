@@ -3,12 +3,13 @@ import { Binding } from '../pages/binding/binding';
 import { Signall } from '../pages/signall/signall';
 import { Condition } from '../pages/condition/condition';
 import { DirectiveAtr } from '../pages/directive-atr/directive-atr';
+import { Pipes } from '../pages/pipes/pipes';
 
 export const routes: Routes = [
 
     {
         path: '',
-        redirectTo: 'directive-atr',
+        redirectTo: 'pipes',
         pathMatch: 'full'
     },
     {
@@ -26,5 +27,9 @@ export const routes: Routes = [
     {
         path:'directive-atr',
         component:DirectiveAtr
+    },
+    {
+        path:'pipes',
+        component:Pipes
     }
 ];
