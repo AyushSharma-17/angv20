@@ -4,12 +4,13 @@ import { Signall } from '../pages/signall/signall';
 import { Condition } from '../pages/condition/condition';
 import { DirectiveAtr } from '../pages/directive-atr/directive-atr';
 import { Pipes } from '../pages/pipes/pipes';
+import { Getapi } from '../pages/getapi/getapi';
 
 export const routes: Routes = [
 
     {
         path: '',
-        redirectTo: 'pipes',
+        redirectTo: 'getapi',
         pathMatch: 'full'
     },
     {
@@ -31,5 +32,9 @@ export const routes: Routes = [
     {
         path:'pipes',
         component:Pipes
+    },
+    {
+        path:'getapi',
+        component:Getapi
     }
 ];
