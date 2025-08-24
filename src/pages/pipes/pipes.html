@@ -1,7 +1,48 @@
 <p>pipes works!</p>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-<div>
+<div class="row">
+  <div class="col-3">
+    courseName => {{courseName}}
+    <br>
+    courseName uppercase => {{courseName | uppercase}}
+    <br>
+    {{courseName | lowercase}}
+  </div>
+  <br>
+<div class="col-3">
     firtname => {{firstname}}
     <br>
     firstname uppercase => {{firstname | uppercase}}
+    <br>
+    {{firstname | lowercase}}
 </div>
+<div class="row">
+    <div class="col-3">
+        courseName => {{courseName| titlecase}}
+    </div>
+</div>
+</div>
+<div class="row">
+    <div class="col-3">
+        rollList => {{rollList}}
+        <br>
+        rollList => {{rollList | slice:0:5}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        currentDate => {{currentDate}}
+        <br>
+        currentDate => {{currentDate |date}}
+        <br>
+       currentDate => {{currentDate |date:'dd-MMM-yyyy'}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        studentList =>{{studentList}}
+        <br>
+        studentList =>{{studentList | json}}
+    </div>
+</div>
+
