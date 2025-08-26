@@ -5,6 +5,7 @@ import { Condition } from '../pages/condition/condition';
 import { DirectiveAtr } from '../pages/directive-atr/directive-atr';
 import { Pipes } from '../pages/pipes/pipes';
 import { Getapi } from '../pages/getapi/getapi';
+import { Userpost } from '../pages/userpost/userpost';
 
 export const routes: Routes = [
 
@@ -36,5 +37,9 @@ export const routes: Routes = [
     {
         path:'getapi',
         component:Getapi
+    },
+    {
+        path:'userpost',
+        component:Userpost
     }
 ];
