@@ -49,4 +49,34 @@ onreset(){
     "mobileNo":"",
   };
 }
+onEdit(item:any){
+  this.userObj=item;
+}
+onupdateUser(){
+  this.userObj.createdDate=new Date();
+this.http.put("https://api.freeprojectapi.com/api/GoalTracker/updateUser?id="+this.userObj.userId,this.userObj).subscribe({
+  next:()=> {
+    alert("user updated successfully");
+    this.getUser();
+  },
+  error:(error)=>{
+    alert("error"+error.error);
+  }
+})
+}
+onDelete(id:number){
+  const conf=confirm("Are you sure want to delete?");
+  if(conf)
+  {
+  this.http.delete("https://api.freeprojectapi.com/api/GoalTracker/deleteUserById?id="+id).subscribe({
+  next:()=> {
+    alert("user Deleted successfully");
+    this.getUser();
+  },
+  error:(error)=>{
+    alert("error"+error.error);
+  }
+})
+}
+}
 }
