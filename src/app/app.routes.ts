@@ -6,12 +6,13 @@ import { DirectiveAtr } from '../pages/directive-atr/directive-atr';
 import { Pipes } from '../pages/pipes/pipes';
 import { Getapi } from '../pages/getapi/getapi';
 import { Userpost } from '../pages/userpost/userpost';
+import { ReactiveForms } from '../pages/reactive-forms/reactive-forms';
 
 export const routes: Routes = [
 
     {
         path: '',
-        redirectTo: 'getapi',
+        redirectTo: 'reactive-forms',
         pathMatch: 'full'
     },
     {
@@ -41,5 +42,9 @@ export const routes: Routes = [
     {
         path:'userpost',
         component:Userpost
+    },
+    {
+        path:'reactive-forms',
+        component:ReactiveForms
     }
 ];
