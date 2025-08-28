@@ -1,0 +1,43 @@
+<p>tempvalid works!</p>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<div class="row">
+    <form #formVal="ngForm">
+    <div class="col-6">
+        <label for="">email</label>
+        <input type="text"  #email="ngModel" name="email" required [(ngModel)]="userObj.emailId" class="form-control">
+        
+        @if(email.touched){
+        <div class="text-danger">
+            @if(email.errors ?.['required']){
+                <span>this is required</span>
+            }
+            
+        </div>
+    }
+    </div>
+     <div class="col-6">
+        <label for="">password</label>
+        <input type="text"  #password="ngModel" name="password" required [(ngModel)]="userObj.password"  class="form-control">
+        <div class="text-danger">
+            <span>this is required</span>
+        </div>
+    </div>
+    <div class="col-6">
+        <label for="">fullName</label>
+        <input type="text"  #fullName="ngModel" name="fullName" required [(ngModel)]="userObj.fullName" class="form-control">
+    </div>
+    <div class="col-6">
+        <label for="">mobileNo</label>
+        <input type="text" #mobileNo="ngModel" name="mobileNo"  required [(ngModel)]="userObj.mobileNo" class="form-control">
+    </div>
+
+    <div class="col-6">
+        formVal=>{{formVal.invalid}}
+        <button class="btn btn-success" [disabled]="formVal.invalid" (click)="onSaveUser()">save</button>
+    </div>
+    <div class="col-6">
+        <button class="btn btn-success" (click)="onUser()">savet</button>
+    </div>
+
+    </form>
+</div>

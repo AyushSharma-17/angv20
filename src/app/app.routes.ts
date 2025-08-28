@@ -7,12 +7,13 @@ import { Pipes } from '../pages/pipes/pipes';
 import { Getapi } from '../pages/getapi/getapi';
 import { Userpost } from '../pages/userpost/userpost';
 import { ReactiveForms } from '../pages/reactive-forms/reactive-forms';
+import { Tempvalid } from '../pages/tempvalid/tempvalid';
 
 export const routes: Routes = [
 
     {
         path: '',
-        redirectTo: 'reactive-forms',
+        redirectTo: 'tempvalid',
         pathMatch: 'full'
     },
     {
@@ -46,5 +47,9 @@ export const routes: Routes = [
     {
         path:'reactive-forms',
         component:ReactiveForms
+    },
+    {
+        path:'tempvalid',
+        component:Tempvalid
     }
 ];
