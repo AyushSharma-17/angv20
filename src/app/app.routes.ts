@@ -8,12 +8,14 @@ import { Getapi } from '../pages/getapi/getapi';
 import { Userpost } from '../pages/userpost/userpost';
 import { ReactiveForms } from '../pages/reactive-forms/reactive-forms';
 import { Tempvalid } from '../pages/tempvalid/tempvalid';
+import { ReactiveVal } from '../pages/reactive-val/reactive-val';
+import { PipeNewC } from '../pages/pipe-new-c/pipe-new-c';
 
 export const routes: Routes = [
 
     {
         path: '',
-        redirectTo: 'tempvalid',
+        redirectTo: 'pipe-new-c',
         pathMatch: 'full'
     },
     {
@@ -51,5 +53,13 @@ export const routes: Routes = [
     {
         path:'tempvalid',
         component:Tempvalid
+    },
+    {
+        path:'reactive-val',
+        component:ReactiveVal
+    },
+    {
+        path:'pipe-new-c',
+        component:PipeNewC
     }
 ];
