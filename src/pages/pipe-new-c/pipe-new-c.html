@@ -1,1 +1,27 @@
 <p>pipe-new-c works!</p>
+<p> this is uppercase pipe {{courseName|uppercase}}</p>
+<p>this is lower case pipe {{courseName|lowercase}} </p>
+<p> this is tile case pipe {{titleName|titlecase}}</p>
+<div class="row">
+    <div class="col-6">
+        <p> current date {{currentDate}}</p>
+        <p>date pipe {{currentDate|date}}</p>
+        <p> date pipe format {{currentDate|date:'dd-mm-yyyy'}}</p>
+        <p> date pipe format {{currentDate|date:'dd/MMM/yyyy'}}</p>
+         <p> date pipe format {{currentDate|date:'M/dd/yyyy'}}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <p> this is rolllist {{rollList}}</p>
+        <p> this is slice pipe{{rollList|slice:2:6}}</p>
+        <p>this is a next slice pipe {{rollList|slice:5}}</p>
+        <p> this is a test slice pipe {{rollList|slice:12}}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <p>this is student object {{studentObj}}</p>
+        <p>this is student object with json pipe {{studentObj|json}}</p>
+    </div>
+</div>
