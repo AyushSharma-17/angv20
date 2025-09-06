@@ -10,12 +10,13 @@ import { ReactiveForms } from '../pages/reactive-forms/reactive-forms';
 import { Tempvalid } from '../pages/tempvalid/tempvalid';
 import { ReactiveVal } from '../pages/reactive-val/reactive-val';
 import { PipeNewC } from '../pages/pipe-new-c/pipe-new-c';
+import { TestService } from '../pages/test-service/test-service';
 
 export const routes: Routes = [
 
     {
         path: '',
-        redirectTo: 'pipe-new-c',
+        redirectTo: 'test-service',
         pathMatch: 'full'
     },
     {
@@ -61,5 +62,9 @@ export const routes: Routes = [
     {
         path:'pipe-new-c',
         component:PipeNewC
+    },
+    {
+        path:'test-service',
+        component:TestService
     }
 ];

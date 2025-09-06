@@ -1,9 +1,10 @@
 import { DatePipe, JsonPipe, LowerCasePipe, SlicePipe, TitleCasePipe, UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
+import { NaPipePipe } from '../na-pipe-pipe';
 
 @Component({
   selector: 'app-pipe-new-c',
-  imports: [UpperCasePipe,LowerCasePipe,TitleCasePipe,DatePipe,SlicePipe,JsonPipe],
+  imports: [UpperCasePipe,LowerCasePipe,TitleCasePipe,DatePipe,SlicePipe,JsonPipe,NaPipePipe],
   templateUrl: './pipe-new-c.html',
   styleUrl: './pipe-new-c.css'
 })
