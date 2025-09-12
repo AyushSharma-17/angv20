@@ -11,12 +11,13 @@ import { Tempvalid } from '../pages/tempvalid/tempvalid';
 import { ReactiveVal } from '../pages/reactive-val/reactive-val';
 import { PipeNewC } from '../pages/pipe-new-c/pipe-new-c';
 import { TestService } from '../pages/test-service/test-service';
+import { BasicObservable } from '../pages/basic-observable/basic-observable';
 
 export const routes: Routes = [
 
     {
         path: '',
-        redirectTo: 'test-service',
+        redirectTo: 'basic-observable',
         pathMatch: 'full'
     },
     {
@@ -66,5 +67,9 @@ export const routes: Routes = [
     {
         path:'test-service',
         component:TestService
+    },
+    {
+        path:'basic-observable',
+        component:BasicObservable
     }
 ];
